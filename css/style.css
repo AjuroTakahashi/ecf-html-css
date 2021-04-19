@@ -164,6 +164,7 @@ nav {
 .btn-main:hover {
     background-color: var(--white);
     color: var(--primary);
+    stroke: var(--primary);
     transition: .3s;
 }
 
@@ -212,4 +213,20 @@ nav {
     .card-link {
         font-size: 1.5rem;
     }
+}
+
+.card-svg {
+    stroke: #fff;
+}
+
+.btn-main:hover .card-svg{
+    stroke: var(--primary);
+    transition: .3s;
+}
+
+/* Students */ 
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
