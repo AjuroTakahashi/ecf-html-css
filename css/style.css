@@ -88,7 +88,28 @@ h1 {
 h2 {
     font-family: 'Raleway';
     font-weight: 700;
-    font-style: 3rem;
+    font-size: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+    h2 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    h2 {
+        font-size: 3rem;
+    }
+}
+
+.montserrat {
+    font-family: "Montserrat";
+}
+
+.montserrat-sm {
+    font-family: "Montserrat";
+    font-weight: 600;
 }
 
 /* Navbar */
@@ -110,6 +131,12 @@ nav {
 }
 
 .navbar-link:hover {
+    background-color: #fff;
+    color: var(--primary) !important;
+    transition: .3s;
+}
+
+.navbar-link:focus {
     background-color: #fff;
     color: var(--primary) !important;
     transition: .3s;
@@ -168,10 +195,20 @@ nav {
     transition: .3s;
 }
 
+.btn-main:focus {
+    background-color: var(--white);
+    color: var(--primary);
+    stroke: var(--primary);
+    transition: .3s;
+}
+
 /* News */
 
-.card-col {
+.news-card-col {
     max-width: 70%;
+}
+.card-shadow {
+    box-shadow: 0 0 48px #00000029;
 }
 
 .card-date {
@@ -224,9 +261,77 @@ nav {
     transition: .3s;
 }
 
+.btn-main:focus .card-svg{
+    stroke: var(--primary);
+    transition: .3s;
+}
+
 /* Students */ 
+
+.students {
+    background-color: var(--primary);
+}
 
 .grid{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+    .grid  {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .grid  {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.card-student-img {
+    margin: 2rem;
+    width: 22rem;
+    height: 22rem;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 5rem;
+}
+
+.student-link {
+    color: #fff;
+}
+
+.student-link:hover {
+    color: #686868;
+    transition: .3s;
+}
+
+/* Footer */
+
+footer {
+    background-color: var(--primary);
+}
+
+.contact {
+    font-size: 1.25rem;
+}
+
+.legal {
+    color: #fff;
+}
+
+.legal:hover {
+    color: #686868;
+    transition: .3s;
+}
+
+.footer-svg {
+    fill: #fff;
+}
+
+.footer-socials:hover .footer-svg{
+    fill: #686868;
+    transition: .3s;
 }
