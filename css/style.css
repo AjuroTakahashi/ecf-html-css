@@ -211,10 +211,6 @@ nav {
     box-shadow: 0 0 48px #00000029;
 }
 
-.card-date {
-    display: flex;
-}
-
 .card-title {
     font-family: 'Raleway';
     font-weight: 600;
@@ -291,12 +287,10 @@ nav {
 }
 
 .card-student-img {
-    margin: 2rem;
-    width: 22rem;
-    height: 22rem;
+    width: 14rem;
+    height: 14rem;
     object-fit: cover;
     border-radius: 50%;
-    margin-right: 5rem;
 }
 
 .student-link {
