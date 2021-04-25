@@ -269,6 +269,10 @@ nav {
     box-shadow: 0 0 48px #00000029;
 }
 
+.card-date {
+    color: #663014;
+}
+
 .card-title {
     font-family: 'Raleway';
     font-weight: 600;
@@ -478,3 +482,22 @@ footer {
         font-size: 1.5rem;
     }
 }
+
+
+/* News page */
+
+.news-page {
+    max-width: 52.5rem;
+}
+
+.news-description {
+    font-size: 1.25rem;
+}
+
+/* Policies */
+
+.policies-text {
+    font-size: 1.25rem;
+    max-width: 52.5rem;
+}
+
