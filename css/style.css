@@ -494,10 +494,34 @@ footer {
     font-size: 1.25rem;
 }
 
+/* Contact */
+
+
+.contact-form {
+    max-width: 50rem;
+}
+
+.contact-label {
+    font-size: 1.25rem;
+}
+
+.contact-input {
+    border: none;
+    border-bottom: 1px solid #333;
+}
+
+.contact-input::placeholder {
+    font-style: italic;
+    font-size: 1.25rem;
+}
+
+.contact-msg {
+    height: 15rem;
+}
+
 /* Policies */
 
 .policies-text {
     font-size: 1.25rem;
     max-width: 52.5rem;
 }
-
