@@ -109,6 +109,10 @@ h2 {
     }
 }
 
+h3 {
+    font-size: 1.5rem;
+}
+
 .montserrat {
     font-family: "Montserrat";
 }
@@ -352,7 +356,7 @@ nav {
 }
 
 .student-link:hover {
-    color: #686868;
+    color: #333;
     transition: .3s;
 }
 
@@ -404,8 +408,6 @@ footer {
     }
 }
 
-/* Training module */
-
 .module-title {
     min-height: 40vh;
     background-image: url("../img/html-css@2x.jpg");
@@ -419,4 +421,60 @@ footer {
     font-weight: 600;
     font-size: 1.5rem;
     max-width: 52.5rem;
+}
+
+/* Students page*/
+
+.students-list .student-link {
+    color : #333;
+}
+
+.students-list .student-link:hover {
+    color : var(--primary);
+    transition: .3s;
+}
+
+.students-list .student-link:last-child {
+    color: var(--primary);
+}
+
+.students-list .student-link:last-child:hover {
+    color: #333;
+}
+
+.card-student-profile {
+    width: 15rem;
+    height: 15rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+@media screen and (min-width: 768px) {
+    .card-student-profile {
+        width: 20rem;
+        height: 20rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .card-student-profile {
+        width: 25rem;
+        height: 25rem;
+    }
+}
+
+.student-description {
+    font-size: 1.2rem;
+}
+
+@media screen and (min-width: 768px) {
+    .student-description {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .student-description {
+        font-size: 1.5rem;
+    }
 }
